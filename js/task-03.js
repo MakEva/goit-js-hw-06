@@ -13,13 +13,8 @@ const images = [
   },
 ];
 
-const gallaryList = document.querySelector(".gallery");
-// const galleryItem = document.createElement("li");
-// const galleryItemImg = document.createElement("img");
 
-// galleryItemImg.
-// console.log(galleryItem);
-// console.log(galleryItemImg);
+const gallaryList = document.querySelector(".gallery");
 
 const galleryItem = createGalleryItems(images);
 
