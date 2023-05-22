@@ -5,7 +5,7 @@ nameInput.addEventListener("input", toTypeName);
 
 function toTypeName() {
     if (nameInput.value.trim() === "") {
-        nameOutput.textContent = "Anonymous";
+      return  nameOutput.textContent = "Anonymous";
     }
     nameOutput.textContent = nameInput.value;
 }

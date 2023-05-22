@@ -10,16 +10,7 @@ const ingredients = [
 
 const list = document.querySelector("ul#ingredients");
 
-ingredients.forEach(ingredient => {
+const items = ingredients.map(ingredient =>
+  `<li class = "item">${ingredient}</li>`).join("");
 
-  const items = document.createElement("li");
-  console.log(items);
-
-  items.textContent = ingredient;
-
-  items.classList.add("item");
-
-  list.append(items);
-});
-
-
+list.innerHTML = items;
